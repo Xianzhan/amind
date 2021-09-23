@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-09-23T07:06:52.724Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36 Edg/93.0.961.52" etag="U_q_t1LRBqn2k41SKiKw" version="15.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-23T08:29:01.313Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36 Edg/93.0.961.52" etag="66LmaHcNJ9roOuOtJHuo" version="15.3.0" type="github">
   <diagram id="36eU4pKLtjQGRjDaztEr" name="订单状态">
-    <mxGraphModel dx="1651" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2312" dy="922" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -370,6 +370,51 @@
         </mxCell>
         <mxCell id="iOZaVTO8fL7gchkErI3n-115" value="如果有异常或失败列表不为空则再次生产消息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="446.5" y="2110" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-125" value="司机位置&lt;br&gt;CarDriverLocationConsumer" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="2420" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-131" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="iOZaVTO8fL7gchkErI3n-126" target="iOZaVTO8fL7gchkErI3n-125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-126" value="检查是否需要查询&lt;br&gt;ConsumerQueryService::querySupplierDriverLocation" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="2290" width="307" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-130" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="iOZaVTO8fL7gchkErI3n-127" target="iOZaVTO8fL7gchkErI3n-126">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-127" value="获取供应商查询间隔时间&lt;br&gt;SupplierQueryFreQuencyCheck::getQueryTimeInterval" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="705" y="2230" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-129" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOZaVTO8fL7gchkErI3n-128" target="iOZaVTO8fL7gchkErI3n-127">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-128" value="&lt;ul&gt;&lt;li&gt;DIDI&lt;/li&gt;&lt;li&gt;CAOCAO&lt;/li&gt;&lt;li&gt;SHOUQI&lt;/li&gt;&lt;li&gt;RUQI&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="1045" y="2210" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-133" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="iOZaVTO8fL7gchkErI3n-132" target="iOZaVTO8fL7gchkErI3n-126">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-132" value="当前时间与上次查询间隔时间小于供应商间隔时间，则不查询" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="706.5" y="2330" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-135" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOZaVTO8fL7gchkErI3n-134" target="iOZaVTO8fL7gchkErI3n-125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-134" value="查询司机位置&lt;br&gt;CarService::querySupplierDriverLocation" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="2425" width="236" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-137" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="iOZaVTO8fL7gchkErI3n-136" target="iOZaVTO8fL7gchkErI3n-125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-136" value="更新司机位置&lt;br&gt;CarService::updateSupplierDriverLocation" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="2530" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-139" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOZaVTO8fL7gchkErI3n-138" target="iOZaVTO8fL7gchkErI3n-136">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-138" value="car_order_info_queue" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="660" y="2520" width="140" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
