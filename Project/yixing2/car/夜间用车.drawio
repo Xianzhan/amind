@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-09-23T08:43:04.579Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36 Edg/93.0.961.52" etag="Pc040pKnOCy3LwnjnoAm" version="15.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-23T09:25:44.365Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36 Edg/93.0.961.52" etag="tdB42goCCXfDoL16ZZ8A" version="15.3.0" type="github">
   <diagram id="36eU4pKLtjQGRjDaztEr" name="订单状态">
-    <mxGraphModel dx="1156" dy="461" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1133" dy="668" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -459,6 +459,98 @@
         </mxCell>
         <mxCell id="iOZaVTO8fL7gchkErI3n-152" value="更新订单数据" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="340" y="2940" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-156" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOZaVTO8fL7gchkErI3n-155" target="iOZaVTO8fL7gchkErI3n-152">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-155" value="car_order_details" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="551.5" y="2940" width="108.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-157" value="策略切换&lt;br&gt;CarStrategySwitchConsumer" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="3130" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-163" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOZaVTO8fL7gchkErI3n-158" target="iOZaVTO8fL7gchkErI3n-161">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-176" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="iOZaVTO8fL7gchkErI3n-158" target="iOZaVTO8fL7gchkErI3n-157">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-158" value="查询策略详情" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="381" y="3060" width="86" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-164" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOZaVTO8fL7gchkErI3n-161" target="iOZaVTO8fL7gchkErI3n-162">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-165" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iOZaVTO8fL7gchkErI3n-164">
+          <mxGeometry x="0.2919" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-170" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOZaVTO8fL7gchkErI3n-161" target="iOZaVTO8fL7gchkErI3n-169">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-171" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iOZaVTO8fL7gchkErI3n-170">
+          <mxGeometry x="-0.298" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-161" value="是否有成功小单" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="364" y="3120" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-162" value="根据策略优先级取成功的一条，取消其他" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="351" y="3230" width="149" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-167" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOZaVTO8fL7gchkErI3n-166" target="iOZaVTO8fL7gchkErI3n-162">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-168" value="strategyId" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iOZaVTO8fL7gchkErI3n-167">
+          <mxGeometry x="-0.1806" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-166" value="car_corp_strategy_detail" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="580" y="3220" width="158.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-173" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="iOZaVTO8fL7gchkErI3n-169" target="iOZaVTO8fL7gchkErI3n-172">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="743.75" y="3138.7500000000005" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-175" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iOZaVTO8fL7gchkErI3n-173">
+          <mxGeometry x="-0.2251" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-183" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="iOZaVTO8fL7gchkErI3n-169" target="iOZaVTO8fL7gchkErI3n-172">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-184" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iOZaVTO8fL7gchkErI3n-183">
+          <mxGeometry x="-0.1684" y="11" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-169" value="当前策略次数是否超过最大次数" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="3113.75" width="110" height="82.5" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-180" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOZaVTO8fL7gchkErI3n-172" target="iOZaVTO8fL7gchkErI3n-179">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-172" value="重新叫车&lt;br&gt;CarService::reCallCar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="681.25" y="3055" width="125" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-177" value="取消所有上一平台单的小单" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1008.75" y="3060" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-181" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iOZaVTO8fL7gchkErI3n-179" target="iOZaVTO8fL7gchkErI3n-177">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-182" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iOZaVTO8fL7gchkErI3n-181">
+          <mxGeometry x="-0.3333" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iOZaVTO8fL7gchkErI3n-179" value="策略是否结束" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="853.75" y="3040" width="115" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
