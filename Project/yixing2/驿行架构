@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-14T13:12:04.892Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Edg/94.0.992.38" etag="cH6aB3b2SnorAJcc1hLd" version="15.3.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-14T13:15:02.615Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Edg/94.0.992.38" etag="IlIqz-9DV6Adg9_frjEJ" version="15.3.3" type="github">
   <diagram id="UM2SNbbwyJ2-mHshXtfm" name="Page-1">
     <mxGraphModel dx="1360" dy="802" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -42,6 +42,12 @@
         </mxCell>
         <mxCell id="dh_9nbAp21PRrhLckRYG-15" value="eureka" style="rounded=0;whiteSpace=wrap;html=1;hachureGap=4;pointerEvents=0;" vertex="1" parent="1">
           <mxGeometry x="770" y="310" width="70" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="dh_9nbAp21PRrhLckRYG-16" value="Redis" style="whiteSpace=wrap;html=1;hachureGap=4;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="530" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="dh_9nbAp21PRrhLckRYG-17" value="" style="shape=datastore;whiteSpace=wrap;html=1;hachureGap=4;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="580" width="460" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
