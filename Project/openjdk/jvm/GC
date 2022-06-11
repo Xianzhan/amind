@@ -1,1 +1,76 @@
-<mxfile host="app.diagrams.net" modified="2022-06-11T15:57:17.685Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36 Edg/102.0.1245.33" version="20.0.0" etag="OlfI-Xp9Jpx4ziAXyNKQ" type="github"><diagram id="cRehnvaSGh9QooUyzW6L">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-06-11T16:12:37.543Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36 Edg/102.0.1245.33" etag="kiDqh2Ke8R7k6WIu2JTs" version="20.0.0" type="github">
+  <diagram id="cRehnvaSGh9QooUyzW6L" name="Heap">
+    <mxGraphModel dx="721" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="s9ag_Tki8SYjJJnyIDsk-1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1040" width="600" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="s9ag_Tki8SYjJJnyIDsk-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="170" y="1090" width="550" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="s9ag_Tki8SYjJJnyIDsk-3" value="Run-Time Data Areas&lt;br&gt;运行时数据区" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="385" y="1050" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s9ag_Tki8SYjJJnyIDsk-5" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="190.5" y="1120" width="259.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="s9ag_Tki8SYjJJnyIDsk-6" value="JVM Stacks&lt;br&gt;Java 虚拟机栈" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="211" y="1130" width="219" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s9ag_Tki8SYjJJnyIDsk-7" value="Heap&lt;br&gt;堆" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="170" y="1240" width="550" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="s9ag_Tki8SYjJJnyIDsk-8" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="170" y="1300" width="550" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="s9ag_Tki8SYjJJnyIDsk-9" value="Run-Time Constant Pool&lt;br&gt;运行时常量池" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="1350" width="470" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="s9ag_Tki8SYjJJnyIDsk-10" value="Native Method Stacks&lt;br&gt;本地方法栈" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="470" y="1120" width="230" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="s9ag_Tki8SYjJJnyIDsk-11" value="Local Variables&lt;br&gt;局部变量" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="211" y="1170" width="219" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s9ag_Tki8SYjJJnyIDsk-16" value="线程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="428" y="1090" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s9ag_Tki8SYjJJnyIDsk-17" value="Method Area&lt;br&gt;方法区（规范）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="378" y="1310" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s9ag_Tki8SYjJJnyIDsk-31" value="Metaspace 元空间(实现)，使用本地内存" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1310" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s9ag_Tki8SYjJJnyIDsk-32" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.224;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="s9ag_Tki8SYjJJnyIDsk-11" target="s9ag_Tki8SYjJJnyIDsk-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="1250" as="sourcePoint" />
+            <mxPoint x="260" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s9ag_Tki8SYjJJnyIDsk-33" value="Obj" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="240" y="1245" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s9ag_Tki8SYjJJnyIDsk-34" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.224;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="s9ag_Tki8SYjJJnyIDsk-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510.0559999999999" y="1190" as="sourcePoint" />
+            <mxPoint x="510" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s9ag_Tki8SYjJJnyIDsk-35" value="Obj" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1245" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s9ag_Tki8SYjJJnyIDsk-36" value="Obj" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1245" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s9ag_Tki8SYjJJnyIDsk-37" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.309;exitY=0.273;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="s9ag_Tki8SYjJJnyIDsk-8" target="s9ag_Tki8SYjJJnyIDsk-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="1220" as="sourcePoint" />
+            <mxPoint x="460" y="1170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
